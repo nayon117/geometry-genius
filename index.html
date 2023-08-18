@@ -11,7 +11,37 @@
 
 <body>
     <header>
-
+      <nav>
+        <div class="navbar bg-blue-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">Geometry Genius</a>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                <span class="badge badge-xs badge-primary indicator-item"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="my-12 px-1 md:px-3 lg:px-4 ">
         <!-- main container  -->
@@ -25,9 +55,9 @@
                 <h2 class="card-title">Triangle</h2>
                 <p>Area (A) =0.5 x b x h</p>
                 <p>
-                  <input id="triangle-base" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="b">
+                  <input id="triangle-base" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="b">
                   <span class="mx-2">cm</span>
-                  <input id="triangle-height" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="h">
+                  <input id="triangle-height" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="h">
                   <span class="ml-2">cm</span>
                 </p>
                 <p class="text-xl">Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
@@ -44,9 +74,9 @@
                 <h2 class="card-title">Rectangle</h2>
                 <p>Area (A) = w x l</p>
                 <p>
-                  <input id="rectangle-width" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="w">
+                  <input id="rectangle-width" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="w">
                   <span class="mx-2">cm</span>
-                  <input id="rectangle-length" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="l">
+                  <input id="rectangle-length" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="l">
                   <span class="ml-2">cm</span>
                 </p>
                 <p class="text-xl">Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
@@ -63,9 +93,9 @@
                 <h2 class="card-title">Parallelogram</h2>
                 <p>Area (A) = b x h</p>
                 <p>
-                  <input id="Parallelogram-base" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="w">
+                  <input id="Parallelogram-base" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="w">
                   <span class="mx-2">cm</span>
-                  <input id="Parallelogram-height" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="l">
+                  <input id="Parallelogram-height" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="l">
                   <span class="ml-2">cm</span>
                 </p>
                 <p class="text-xl">Area: <span id="parallelogram-area">0</span> cm<sup>2</sup></p>
@@ -82,9 +112,9 @@
                 <h2 class="card-title">Rhombus</h2>
                 <p>Area (A) = 0.5 x d1 x d2</p>
                 <p>
-                  <input id="rhombus-d1" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="d1">
+                  <input id="rhombus-d1" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="d1">
                   <span class="mx-2">cm</span>
-                  <input id="rhombus-d2" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="d2">
+                  <input id="rhombus-d2" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="d2">
                   <span class="ml-2">cm</span>
                 </p>
                 <p class="text-xl">Area: <span id="rhombus-area">0</span> cm<sup>2</sup></p>
@@ -101,9 +131,9 @@
                 <h2 class="card-title">Pentagon</h2>
                 <p>Area (A) = 0.5 x p x b</p>
                 <p>
-                  <input id="pentagon-p" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="p">
+                  <input id="pentagon-p" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="p">
                   <span class="mx-2">cm</span>
-                  <input id="pentagon-b" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="b">
+                  <input id="pentagon-b" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="b">
                   <span class="ml-2">cm</span>
                 </p>
                 <p class="text-xl">Area: <span id="pentagon-area">0</span> cm<sup>2</sup></p>
@@ -120,9 +150,9 @@
                 <h2 class="card-title">Ellipse</h2>
                 <p>Area (A) = πab</p>
                 <p>
-                  <input id="ellipse-a" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="p">
+                  <input id="ellipse-a" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="p">
                   <span class="mx-2">cm</span>
-                  <input id="ellipse-b" type="text" class="border bg-gray-100  border-black w-14 px-3" placeholder="b">
+                  <input id="ellipse-b" type="number" class="border bg-gray-100  border-black w-14 px-3" placeholder="b">
                   <span class="ml-2">cm</span>
                 </p>
                 <p class="text-xl">Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
@@ -136,6 +166,7 @@
         <!-- area calculater -->
         <div class="w-[320px]">
           <div class="text-4xl">Area Calculater</div>
+          <div id="calculation-entry"></div>
         </div>
       </div>
     </main>
